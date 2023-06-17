@@ -8,7 +8,11 @@
     font-size: 2em;
     overflow-wrap: break-word;
 }
-
+.logo {
+    position: relative;
+    top: 50px;
+    left: 20px;
+}
 .fontH1 span {
     display: inline-block;
     animation: flip 2s;
@@ -129,7 +133,7 @@ article {
 }
 
 .lavoroBarra {
-    background-color: grey;
+    background-color: #9D7B33;
     border-radius: 10px;
     width: 3px;
     height: auto;
