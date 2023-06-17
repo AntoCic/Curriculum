@@ -1,0 +1,177 @@
+@font-face {
+    font-family: "libertyislandlaser";
+    src: url("../libertyislandlaser.ttf");
+}
+
+.fontH1 {
+    font-family: "libertyislandlaser", cursive;
+    font-size: 2em;
+    overflow-wrap: break-word;
+}
+
+.fontH1 span {
+    display: inline-block;
+    animation: flip 2s;
+    animation-delay: calc(.2s * var(--i))
+}
+
+@keyframes flip {
+
+    0%,
+    80% {
+        transform: rotateY(360deg)
+    }
+}
+
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+body {
+    background-image: url("../img/bkimg.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-auto-rows: auto;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+aside {
+    grid-column: 1/3;
+    text-align: center;
+}
+
+.asideContent {
+    background-color: hsla(0, 0%, 100%, 0.4);
+    border-radius: 20px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    margin-left: 20px;
+    padding: 20px;
+    overflow-wrap: break-word;
+}
+
+#fotoProfilo {
+    width: 100%;
+    border-radius: 20px;
+    margin-bottom: 20px;
+    max-width: 200px;
+}
+
+.asideBox {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    
+}
+
+.iconeLxSide {
+    grid-column: 1/2;
+}
+.iconeLxSide {
+    justify-items: right;
+}
+
+.textRxtSide {
+    grid-column: 2/6;
+    position: relative;
+    top: 4px;
+    text-align: left;
+    
+}
+
+.istruzione {
+    background-color: hsla(0, 0%, 100%, 0.2);
+}
+
+.certificazioni {
+    background-color: hsla(0, 0%, 100%, 0.2);
+}
+
+.lingue {
+    background-color: hsla(0, 0%, 100%, 0.2);
+}
+
+header {
+    color: black;
+    padding: 25px;
+}
+
+.btDownload {
+    position: fixed;
+    top: 50px;
+    right: 20px;
+    z-index: 1;
+
+}
+
+main {
+    grid-column: 3/8;
+    margin: 20px;
+    max-width: 1000px;
+}
+
+article {
+    background-color: hsla(0, 0%, 100%, 0.2);
+    border-radius: 20px;
+    padding: 30px;
+    padding-top: 5px;
+    margin-bottom: 20px;
+    max-width: 1000px;
+}
+
+.lavoroBox {
+    display: grid;
+    grid-template-columns: [first] 30px [line2] auto [end];
+}
+
+.lavoroBarra {
+    background-color: grey;
+    border-radius: 10px;
+    width: 3px;
+    height: auto;
+}
+
+
+
+.digitali {
+    background-color: hsla(0, 0%, 100%, 0.4);
+}
+
+footer {
+    grid-column: 1/8;
+    text-align: center;
+    color: gray;
+}
+
+@media(max-width:58em) {
+    body {
+        grid-template-columns: 1fr;
+        grid-auto-rows: auto;
+    }
+
+    main {
+        order: 1;
+        grid-column: 1/1;
+        margin: 20px;
+        max-width: 1000px;
+        text-align: center;
+    }
+
+    aside {
+        grid-column: 1/1;
+        order: 2;
+        margin-right: 20px;
+    }
+
+    
+    footer {
+        grid-column: 1/1;
+        order: 3;
+    }
+
+
+}

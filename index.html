@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<!-- commneti -->
+<html lang="it">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="author" content="Antonino Cicala" />
+    <meta name="description" content="Curriculum" />
+    <meta property="og:title" content="Antonino Cicala" />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="img/foto.jpeg" />
+    <meta property="og:image:width" content="526" />
+    <meta property="og:image:height" content="275" />
+    <meta property="og:image:type" content="image/jpeg" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:creator" content="anto.cic.127@gmail.com" />
+    <meta property="og:description" content="Curriculum" />
+    <meta property="og:site_name" content="Antonino Cicala" />
+    <!-- Favicon e Titolo -->
+    <link rel="icon" href="img/favicon.png" type="image/png" />
+    <title>Antonino Cicala</title>
+    <!-- Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300&display=swap" rel="stylesheet">
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/style.css" />
+
+    <style>
+        .animate {
+            transform: translateY(+100px);
+        }
+
+        .up {
+            transform: translateY(0);
+            transition: transform ease 1s;
+        }
+    </style>
+    <script>
+        let timer = 0;
+        window.addEventListener('load', (event) => {
+            let intersectionObserver = new IntersectionObserver(entries => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        setTimeout(function () { entry.target.classList.add('up'); }, timer);
+                        timer += 50;
+                        intersectionObserver.unobserve(entry.target);
+                        setTimeout(function () { timer = 0; }, 1000)
+                    }
+                });
+            });
+
+            document.querySelectorAll('.animate').forEach(obj => {
+                intersectionObserver.observe(obj);
+            });
+        });
+
+    </script>
+</head>
+
+<body>
+    <a class="btDownload" href="https://drive.google.com/uc?export=download&id=1XfLcLGNmW4TOUCMTI6SJZ_tCY1HIoMeT"><img
+            src="img/dow_ico.png" alt="Download_CV" width=50em></a>
+    <aside>
+        <div class="asideContent animate">
+            <a href="index.html"><img id="fotoProfilo" src="img/foto.png" alt="Foto profilo"
+                    title="Antonino Cicala"></a>
+            <br>
+            <div class="asideBox">
+                <img class="iconeLxSide" src="img/cellulare.png" alt="cellulare" width=30em>
+                <a class="textRxtSide" href="tel:+393295436315">+39 3295436315</a>
+                <img class="iconeLxSide" src="img/email.png" alt="email" width=30em>
+                <a class="textRxtSide" href="mailto:anto.cic.127@gmail.com">anto.cic.127@gmail.com</a>
+                <img class="iconeLxSide" src="img/indirizzo.png" alt="indirizzo" width=30em>
+                <a class="textRxtSide"
+                    href="https://www.google.it/maps/place/Strada+Regia+Raganella,+40,+92019+Sciacca+AG/@37.5286336,13.0456543,17z/data=!3m1!4b1!4m6!3m5!1s0x131a46ed6e9478ff:0x3e9c05f50527903f!8m2!3d37.5286336!4d13.0482292!16s%2Fg%2F11qnbdhm69?entry=ttu">Strada
+                    Regia Raganella, 40, Sciacca, AG</a>
+            </div>
+        </div>
+        <div class="asideContent istruzione animate">
+            <h2>ISTRUZIONE</h2>
+            <p> <b>Diploma in Amministrazione, Finanza e Marketing, articolazione Sistemi informativi aziendali
+                </b><br>I.T.E.T.
+                Don Michele Arena Sciacca Italy. <br> 2010 - 2015</p>
+        </div>
+        <div class="asideContent certificazioni animate">
+            <h2>CERTIFICAZIONI</h2>
+            <p> <b>Patente di guida: B </b><br> 2014 </p>
+            <p> <b>Brevetto di salvamento </b><br> 2013 </p>
+            <p> <b>Operatore BLS-D </b><br> 2014 </p>
+            <p> <b>Brevetto da paracadutista </b><br> 2016 </p>
+        </div>
+        <div class="asideContent lingue animate">
+            <h2>COMPETENZE LINGUISTICHE</h2>
+            <p> <b>Italiano</b> </p>
+            <p> <b>Inglese</b> </p>
+            <p> <b>Spagnolo</b> </p>
+        </div>
+
+    </aside>
+    <main>
+        <header class="fontH1">
+            
+            <span style="--i:1">A</span>
+            <span style="--i:2">n</span>
+            <span style="--i:3">t</span>
+            <span style="--i:4">o</span>
+            <span style="--i:5">n</span>
+            <span style="--i:6">i</span>
+            <span style="--i:7">n</span>
+            <span style="--i:8">o</span>
+            <span style="--i:16">
+                <img class="iconeLxSide" src="img/logo.png" alt="logo" >
+            </span>
+            <br>
+            <span style="--i:10">C</span>
+            <span style="--i:11">i</span>
+            <span style="--i:12">c</span>
+            <span style="--i:13">a</span>
+            <span style="--i:14">l</span>
+            <span style="--i:15">a</span>
+            
+
+        </header>
+        <article class="animate">
+            <p>Sono una persona socievole e ottimista che ama stare in compagnia e
+                lavorare in squadra. Credo nel lavoro di squadra, nel rispetto degli altri
+                ruoli e nella fiducia in ogni componente del mio team. Riesco a
+                comunicare in modo chiaro e preciso.
+                Ho una buona capacità di gestire progetti e gruppi in modo autonomo,
+                rispettando scadenze e obiettivi grazie alle esperienze maturate in
+                passato.</p>
+
+            <h2>ESPERIENZE LAVORATIVE</h2>
+            <div class="lavoroBox">
+                <div class="lavoroBarra"></div>
+                <div class="lavoroContent">
+                    <p> <b>Agosto 2020 a oggi / Bartender lavoratore stagionale circa 8 mesi l’anno.</b><br> Verdura
+                        Resort
+                        Rocco Forte,
+                        92019 Sciacca Italy. </p>
+                    <br>
+                    <p><b>Marzo 2017- Giugno 2018 / Bartender</b><br>Oblix, The shard level 32°, SE19RY, London. </p>
+                    <br>
+                    <p><b>Settembre 2016- Marzo 2017 / Commí-barback</b><br> Signor Sassi Italian Restaurant, London.
+                    </p>
+                    <br>
+                    <p><b>Luglio 2016- Agosto 2016 / Assistente Bagnanti Civil Defence</b><br> Via Itria 88/b, Marsala,
+                        Italy.
+                    </p>
+                    <br>
+                    <p><b>Aprile 2014- Maggio 2014 / Stagista CLICK IT Computer e assistenza tecnica</b><br> Sciacca,
+                        Italy.
+                    </p>
+                </div>
+            </div>
+
+
+        </article>
+        <article class="digitali animate">
+            <h2>COMPETENZE DIGITALI</h2>
+            <p> C++(base)/ JavaScript(base)/ HTML(base)/ CSS(base) </p>
+            <p><b>Certificazione ECDL Standard </b><br> AICA, 2014</p>
+            <p><b>Corso CMS e WEB Developer </b><br> Penta Ingegneria snc, 2014</p>
+            <p><b>Attestato del corso di fotografia digitale </b><br> ottenuto nel 2016</p>
+        </article>
+    </main>
+
+    <footer>
+        <p>Antonino Cicala © Copyright 2023 by Antonino Cicala</p>
+    </footer>
+</body>
+
+</html>
