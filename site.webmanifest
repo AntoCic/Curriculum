@@ -1,0 +1,12 @@
+{
+    "short_name": "CicalaCV",
+    "name": "Curriculum Antonino Cicala",
+    "icons": [{
+    "src": "./img/logo.png",
+    "type": "image/png",
+    "sizes": "192x192"
+    }],
+    "theme_color": "#ffffff",
+    "display": "fullscreen"
+   }
+   
