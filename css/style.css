@@ -39,9 +39,6 @@ body {
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
     grid-auto-rows: auto;
     font-family: 'Josefin Sans', sans-serif;
-    z-index: -1;
-    overflow-y: auto;
-    overscroll-behavior: contain;
 }
 
 aside {
