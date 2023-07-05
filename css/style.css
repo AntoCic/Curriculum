@@ -8,8 +8,9 @@
     font-size: 2em;
     overflow-wrap: break-word;
 }
-.logo {
-}
+
+.logo {}
+
 .fontH1 span {
     display: inline-block;
     animation: flip 2s;
@@ -66,12 +67,13 @@ aside {
 .asideBox {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-    
+
 }
 
 .iconeLxSide {
     grid-column: 1/2;
 }
+
 .iconeLxSide {
     justify-items: right;
 }
@@ -81,7 +83,7 @@ aside {
     position: relative;
     top: 4px;
     text-align: left;
-    
+
 }
 
 .istruzione {
@@ -142,7 +144,7 @@ article {
     background-color: hsla(0, 0%, 100%, 0.4);
 }
 
-.collegamnti a img{
+.collegamnti a img {
     padding: 5px;
     margin: 0 auto;
     border: 3px solid black;
@@ -176,10 +178,15 @@ footer,
         margin-right: 20px;
     }
 
-    
-    footer {
+    .collegamnti {
         grid-column: 1/1;
         order: 3;
+    }
+
+
+    footer {
+        grid-column: 1/1;
+        order: 4;
     }
 
 
