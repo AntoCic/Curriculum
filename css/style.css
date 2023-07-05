@@ -142,7 +142,15 @@ article {
     background-color: hsla(0, 0%, 100%, 0.4);
 }
 
-footer {
+.collegamnti a img{
+    padding: 5px;
+    margin: 0 auto;
+    border: 3px solid black;
+    border-radius: 10px;
+}
+
+footer,
+.collegamnti {
     grid-column: 1/8;
     text-align: center;
     color: gray;
